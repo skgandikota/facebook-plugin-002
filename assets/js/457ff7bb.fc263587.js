@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook_plugin_002=self.webpackChunkfacebook_plugin_002||[]).push([[998],{7570:function(u){u.exports=JSON.parse('{"allTagsPath":"/facebook-plugin-002/blog/tags","slug":"/facebook-plugin-002/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/facebook-plugin-002/blog/tags/docusaurus"}')}}]);

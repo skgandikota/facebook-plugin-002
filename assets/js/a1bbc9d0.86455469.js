@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook_plugin_002=self.webpackChunkfacebook_plugin_002||[]).push([[652],{7206:function(e){e.exports=JSON.parse('{"permalink":"/facebook-plugin-002/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
