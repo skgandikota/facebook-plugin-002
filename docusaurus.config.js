@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://skgandikota.github.io',
+  baseUrl: '/facebook-plugin-002/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'skgandikota', // Usually your GitHub org/user name.
+  projectName: 'facebook-plugin-002', // Usually your repo name.
 
   presets: [
     [
@@ -69,6 +69,39 @@ const config = {
           {
             title: 'Docs',
             items: [
+              {html: `
+              <!-- Messenger Chat Plugin Code -->
+              <div id="fb-root"></div>
+
+              <!-- Your Chat Plugin code -->
+              <div id="fb-customer-chat" class="fb-customerchat">
+              </div>
+
+              <script>
+              var chatbox = document.getElementById('fb-customer-chat');
+              chatbox.setAttribute("page_id", "100264255877775");
+              chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+        
+            <!-- Your SDK code -->
+            <script>
+              window.fbAsyncInit = function() {
+                FB.init({
+                  xfbml            : true,
+                  version          : 'v12.0'
+                });
+              };
+        
+              (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+              `},
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
